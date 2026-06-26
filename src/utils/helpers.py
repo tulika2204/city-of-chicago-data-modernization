@@ -1,0 +1,10 @@
+from __future__ import annotations
+
+from pathlib import Path
+import json
+
+
+def write_json(path: str, payload: dict) -> None:
+    output_path = Path(path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")

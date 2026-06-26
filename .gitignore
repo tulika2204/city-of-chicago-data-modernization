@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+env/
+dist/
+build/
+*.log
+.idea/
+.vscode/
+target/
+dbt_packages/
+logs/
+.DS_Store

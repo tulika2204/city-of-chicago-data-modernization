@@ -1,0 +1,14 @@
+name: dbt CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  dbt-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "dbt deps"
+      - run: echo "dbt parse"
+      - run: echo "dbt test"

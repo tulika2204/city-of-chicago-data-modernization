@@ -1,0 +1,12 @@
+name: SQL Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sql-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Integrate SQLFluff or warehouse-specific linting here"
